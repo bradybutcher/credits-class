@@ -29,5 +29,7 @@ public class CourseClient {
         } else {
             System.out.println("No");
         }
+
+        System.out.println("Your total credits:" + Course.getTotalCredits());
     }
 }

@@ -2,11 +2,13 @@ public class Course {
     private String code;
     private String description;
     private int numOfCredits;
+    private static int totalCredits = 0;
 
     public Course(String code, String description, int numOfCredits) {
         this.code = code;
         this.description = description;
         this.numOfCredits = numOfCredits;
+        totalCredits = totalCredits + numOfCredits;
     }
 
     @Override
@@ -36,5 +38,9 @@ public class Course {
 
     public int getNumOfCredits() {
         return this.numOfCredits;
+    }
+
+    public static int getTotalCredits() {
+        return totalCredits;
     }
 }
