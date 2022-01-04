@@ -30,6 +30,7 @@ public class CourseClient {
             System.out.println("No");
         }
 
-        System.out.println("Your total credits:" + Course.getTotalCredits());
+        System.out.println(" ");
+        System.out.println("Your total credits:" + " " + Course.getTotalCredits());
     }
 }
